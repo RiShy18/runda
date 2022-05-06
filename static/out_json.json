@@ -1,0 +1,97 @@
+{
+    "Audit Date": "05/03/2022",
+    "Name": "debugUser",
+    "Project Name": "DebugCode2",
+    "Code Version": "0C81",
+    "Device": "LCMXO3LF-6900CCABGA400",
+    "Diamond Version": "3.11.0.396.4",
+    "Utilization (%)": "93",
+    "RTL Violations": 2,
+    "CDC Violations": 0,
+    "Constraint Coverage (%)": "96.62",
+    "Timing Violations": 0,
+    "Number of registers": "Number of registers:   5146 out of  7872 (65%)",
+    "Number of SLICEs": "Number of SLICEs:      3200 out of  3432 (93%)",
+    "Number of LUT4s": "Number of LUT4s:        6224 out of  6864 (91%)",
+    "QuIX ID": 0,
+    "clocks": [
+        {
+            "source": "CLK_GMT_CPLD_c",
+            "required": "25.000000",
+            "achieved": "500.000"
+        },
+        {
+            "source": "core_clk",
+            "required": "50.000000",
+            "achieved": "58.326"
+        },
+        {
+            "source": "clk_100m",
+            "required": "100.000000",
+            "achieved": "150.015"
+        },
+        {
+            "source": "CLK_GMT_CIF_OUT_c",
+            "required": "100.000000",
+            "achieved": "120.963"
+        }
+    ],
+    "sections": [
+        {
+            "description": "Single-Bit Signal Across Clock Domain Boundary",
+            "category": "CDC",
+            "module": "Check clock definition",
+            "line": "*CDC,ASYNC*",
+            "error code": "no line",
+            "severity": "Single-Bit Signal Across Clock Domain Boundary"
+        },
+        {
+            "description": "Multiple-Bit Signal Across Clock Domain Boundary",
+            "category": "CDC",
+            "module": "Check clock definition",
+            "line": "*CDC,ASYNC*",
+            "error code": "no line",
+            "severity": "Multiple-Bit Signal Across Clock Domain Boundary"
+        },
+        {
+            "description": "Asynchronous Reset Without Synchronization",
+            "category": "CDC",
+            "module": "Check clock definition",
+            "line": "*CDC,ASYNC*",
+            "error code": "no line",
+            "severity": "Asynchronous Reset Without Synchronization"
+        },
+        {
+            "description": "Combinational logic before synchronizer",
+            "category": "CDC",
+            "module": "Check clock definition",
+            "line": "*CDC,ASYNC*",
+            "error code": "no line",
+            "severity": "Combinational logic before synchronizer"
+        },
+        {
+            "description": "map: A new DEV_DENSITY property is auto created with value '6900L' by\n     software from the device 'LCMXO3LF-6900C' used",
+            "category": "COMPILE",
+            "module": "Design Errors",
+            "line": "NA",
+            "error code": "*ERROR*",
+            "severity": "Critical"
+        },
+        {
+            "description": "Wire 'xreg_rdata_secstart' defined in module 'rcif_top' is unassigned, but drives at least an object :190",
+            "category": "rcif_top.v",
+            "module": "rcif_top.v",
+            "line": "rcif_top.v",
+            "error code": "HAL",
+            "severity": "HAL"
+        },
+        {
+            "description": "Wire 'xreg_fan_fail_ne' defined in module 'smart_id_fans' does not drive any object, but is assigned at least once :312",
+            "category": "smart_id_fans.v",
+            "module": "smart_id_fans.v",
+            "line": "smart_id_fans.v",
+            "error code": "HAL",
+            "severity": "HAL"
+        }
+    ]
+}
