@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'runda'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FECE805FEB244076BA524C03AAD5493D }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_64AE0155EF434129A0CEB6A6D0683A0C }}
